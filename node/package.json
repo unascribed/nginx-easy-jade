@@ -1,0 +1,30 @@
+{
+  "name": "nginx-easy-jade",
+  "version": "1.0.0",
+  "description": "node-fastcgi based server for use with nginx",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unascribed/nginx-easy-jade.git"
+  },
+  "keywords": [
+    "nginx",
+    "jade",
+    "fastcgi"
+  ],
+  "author": "unascribed (Aesen Vismea)",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/unascribed/nginx-easy-jade/issues"
+  },
+  "homepage": "https://github.com/unascribed/nginx-easy-jade#readme",
+  "dependencies": {
+    "express": "^4.13.1",
+    "jade": "^1.11.0",
+    "node-fastcgi": "^0.1.10",
+    "stylus": "^0.52.0"
+  }
+}
