@@ -23,6 +23,7 @@
   "homepage": "https://github.com/unascribed/nginx-easy-jade#readme",
   "dependencies": {
     "jade": "^1.11.0",
+    "nib": "^1.1.0",
     "node-fastcgi": "^0.1.10",
     "stylus": "^0.52.0"
   }

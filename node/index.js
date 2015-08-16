@@ -2,7 +2,8 @@ var fcgi = require('node-fastcgi'),
 	jade = require('jade'),
 	stylus = require('stylus'),
 	path = require('path'),
-	fs = require('fs');
+	fs = require('fs'),
+	nib = require('nib');
 
 var jadeRegex = /\.jade$/;
 var stylusRegex = /\.styl(us)?$/;
@@ -32,6 +33,7 @@ fcgi.createServer(function(req, res) {
 				res.writeHead(200, { 'Content-Type': 'text/css' });
 				stylus(fs.readFileSync(p).toString())
 					.set('filename', p)
+					.use(nib())
 					.render(function(err, css) {
 						if (err) {
 							throw err;
